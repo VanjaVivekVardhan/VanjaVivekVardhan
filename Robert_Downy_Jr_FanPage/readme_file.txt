@@ -1,0 +1,2 @@
+-- All the 3 files(html,css,jpeg) should always be in one folder.
+-- Then open on the HTML file, it will open in your default browser.
