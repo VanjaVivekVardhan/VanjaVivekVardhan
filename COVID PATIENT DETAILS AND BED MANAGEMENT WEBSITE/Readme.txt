@@ -9,3 +9,5 @@ Instructions for opening the Website :
 3. Then, find the "index.html" file. And open it with the browser.
 
 4. After that, navigate through different functionalities added in the website.
+
+5. !! About Login : Considering the complete examining of website, there are no usernames and passwords. So, you should leave the feilds(username and password) blank and click on the login in the authentication page. It will redirect you to next page.
