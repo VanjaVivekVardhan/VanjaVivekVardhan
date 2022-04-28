@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @VanjaVivekVardhan
-- 👀 I’m currently interested in designing web pages and UI.
+- 👀 I’m interested in designing Web Pages, Web Development and UI.
 - 🌱 I learnt html, css, javascript, jQuery, C, C++.
 - 💞️ I’m looking to collaborate on web based projects and software related projects
 - 📫 How to reach me -- vanjavivekvardhan@gmail.com // 
