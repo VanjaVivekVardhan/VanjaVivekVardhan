@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATIENT DETAILS</title>
+    <style>
+        body{
+            text-align: center;
+            background-image: url(background_edited.jpg);
+        }
+        button
+        {
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+            transition: all 0.5s ease-out;
+        }
+        button:hover
+        {
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            font-size: x-large;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Patient Details</h1>
+    <form>
+        Name : 
+        <input id="name" type="text" placeholder="Patients Name" name="uname" required>
+        <br><br>
+        Age :
+        <input id="age" type="number" placeholder="Age" name="uname" required>
+        <br><br>
+        Gender :
+        <select>
+            <option value="male">MALE</option>
+            <option value="female">FEMALE</option>
+        </select>
+        <br><br>
+        Patent ID : 
+        <input id="ID" type="text" placeholder="Patient ID" name="uname" required>
+        <br><br>
+        Phone Number :
+        <input id="number" type="number" placeholder="Phone Number" name="uname" required>
+        <br><br>
+        Date Of Birth :
+        <input id="dob" type="date" placeholder="Date Of Birth" name="uname" required>
+        <br><br>
+        Address :
+        <textarea id="address" rows="10"></textarea>
+        <br>
+        <br>
+        Medical History :
+        <input id="mh" type="text" placeholder="Medical History" name="uname" required>
+        <br><br>
+        Bed number :
+        <input id="number" type="text" placeholder="Enter bed number" name="uname" required>
+        <br><br>
+    </form>
+    <button onclick="go_to_homepage()" style="background-color: rgb(71, 231, 71);">SAVE</button>
+    <br>
+    <br>
+    <button onclick="window.print()">PRINT</button>
+    <br>
+    <br>
+    <button onclick="no_changes()" style="background-color: rgb(231, 103, 71);">CANCEL</button>
+    <br>
+    <br>
+    <button onclick="go_back()" style="background-color: rgb(71, 212, 231);">GO BACK</button>
+    <script>
+        function go_to_homepage()
+        {
+            alert("DETAILS ARE SAVED SUCCESFULLY");
+            window.location.href="main_homepage.html";
+        }
+        function no_changes()
+        {
+            var a=confirm("CHANGES WILL BE LOST AND WILL BE REDIRECTED TO HOMEPAGE");
+            if(a==true)
+            {
+                window.location.href="main_homepage.html"
+            }
+        }
+        function go_back()
+        {
+            alert("NO CHANGES HAVE BEEN MADE");
+            window.location.href="main_homepage.html"
+        }
+    </script>
+</body>
+</html>

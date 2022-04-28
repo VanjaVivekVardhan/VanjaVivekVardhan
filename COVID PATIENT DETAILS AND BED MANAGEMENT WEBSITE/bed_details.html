@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BED DETAILS</title>
+    <link rel="stylesheet" type="text/css" href="css_stylesheet.css">
+    <style>
+        .slide
+        {
+            background-image: url(background_edited.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h3>BED DETAILS</h3>
+    <div>
+        <button class="slide" onclick="covid_bed_list()">COVID</button>
+        <button class="slide" onclick="non_covid_bed_list()">NON-COVID</button>
+    </div>
+    <script>
+        function covid_bed_list()
+        {
+            window.location.href="covid_bed_details.html";
+        }
+        function non_covid_bed_list()
+        {
+            window.location.href="non_covid_bed_details.html";
+        }
+    </script>
+</body>
+</html>

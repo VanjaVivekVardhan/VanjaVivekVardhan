@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID TEST AND BED MANAGEMENT PORTAL</title>
+    <link rel="stylesheet" type="text/css" href="css_stylesheet.css">
+    <style>
+        .slide
+        {
+            background-image: url(background_edited.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>COVID TEST AND BED MANAGEMENT PORTAL</h1>
+    <div>
+    <button id="login" onclick="authentication()">LOGIN</button>
+    <div id="center_inline_elements">
+    <button class="slide" onclick="first_authenticate()">PATIENT DETAILS</button>
+    <button class="slide" onclick="first_authenticate()">COVID PORTAL</button>
+    <button class="slide" onclick="first_authenticate()">BED DETAILS</button>
+    </div>
+    </div>
+</body>
+<script>
+    function authentication()
+    {
+        window.location.href="authentication_page.html";
+    }
+    function first_authenticate()
+    {
+        alert("PLEASE LOGIN TO ACCESS THE INFORMATION");
+    }
+</script>
+</html>

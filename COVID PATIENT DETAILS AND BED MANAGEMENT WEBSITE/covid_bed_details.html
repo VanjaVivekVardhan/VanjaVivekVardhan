@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID BED DETAILS LIST</title>
+    <link rel="stylesheet" type="text/css" href="css_stylesheet.css">
+    <style>
+        button:hover
+        {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h3>COVID BED DETAILS LIST</h3>
+    <form>
+        Enter BED number : 
+        <input type="number" placeholder="enter the bed number" required>
+        <br>
+        <br>
+        Status of Bed : 
+        <select>
+            <option>OCCUPIED</option>
+            <option>NOT-OCCUPIED</option>
+        </select>
+        <br>
+        <br>
+        Patient ID :
+        <input type="number" placeholder="enter the patient ID">
+        <br>
+        <br>
+        <button id="save" onmouseover="changeStyle()" onmouseout="changeStyleToNormal()" onclick="return_to_backpage()">SAVE</button>
+    </form>
+    <script>
+        function changeStyle()
+        {
+            var a=document.getElementById("save");
+            a.style.backgroundColor="green";
+            a.style.color="white";
+            a.style.transition="0.5s";
+        }
+        function changeStyleToNormal()
+        {
+            var a=document.getElementById("save");
+            a.style.backgroundColor="white";
+            a.style.color="black";
+            a.style.transition="0.5s";
+        }
+        function return_to_backpage()
+        {
+            window.location.href="bed_details.html";
+        }
+    </script>
+</body>
+</html>

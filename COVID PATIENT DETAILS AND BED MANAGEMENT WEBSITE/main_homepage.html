@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID TEST AND BED MANAGEMENT PORTAL</title>
+    <link rel="stylesheet" type="text/css" href="css_stylesheet.css">
+    <style>
+        .slide
+        {
+            background-image: url(background_edited.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>COVID TEST AND BED MANAGEMENT PORTAL</h1>
+    <div id="center_inline_elements">
+    <button class="slide" onclick="patient_form()">PATIENT DETAILS</button>
+    <button class="slide" onclick="covid_details_form()">COVID PORTAL</button>
+    <button class="slide" onclick="bed_details()">BED DETAILS</button>
+    </div>
+    <button id="logout" onclick="index_page()">LOG OUT</button>
+    <script>
+        function patient_form()
+        {
+            window.location.href="patient_form.html";
+        }
+        function covid_details_form()
+        {
+            window.location.href="covid_details_form.html";
+        }
+        function index_page()
+        {
+            var logout=confirm("ARE YOU SURE TO LOGOUT");
+            if(logout==true)
+            {
+                window.location.href="index.html";
+            }
+        }
+        function bed_details()
+        {
+            window.location.href="bed_details.html";
+        }
+    </script>
+</body>
+</html>
